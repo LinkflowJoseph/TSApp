@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <ImageButton 
+        android:id="@+id/ib_videoback"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_height="50dp"
+        android:layout_width="50dp"
+        android:background="@drawable/re"/>
+     <ImageButton 
+        android:id="@+id/ib_videofoward"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_height="70dp"
+        android:layout_width="70dp"
+        android:background="@drawable/re2"/>
+
+
+    <SurfaceView
+        android:id="@+id/sv"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true" />
+      <LinearLayout
+        android:id="@+id/seekbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" 
+        android:layout_below="@id/sv" >
+
+     <Button
+                android:id="@+id/button_play"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/play" />
+        <TextView
+            android:id="@+id/current_tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:text="00:00"
+            android:textColor="@color/blue"  />
+
+
+        <SeekBar
+            android:id="@+id/seekBar"  
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.SeekBar.Normal"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:maxHeight="5dip"
+            android:minHeight="5dip"
+            android:progress="0"
+            />
+
+        <TextView
+            android:id="@+id/current_tv_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dip"
+            android:text="00:00"
+            android:textColor="@color/blue"    />
+
+        <ImageButton
+            android:id="@+id/iv_fileinfo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/stop" />
+ 
+            </LinearLayout>
+     <!--    <LinearLayout  
+        android:id="@+id/linearLayout"  
+        android:layout_width="match_parent"  
+        android:layout_height="wrap_content"  
+         android:gravity="center_horizontal"
+        android:layout_below="@id/seekbar_layout"  
+        android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/button_play"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/select_all" />
+
+    <Button 
+         android:id="@+id/button_pause"  
+              android:layout_width="60dp"
+            android:layout_height="60dp"
+      android:background="@drawable/select_all"
+      />
+
+    <Button
+        android:id="@+id/button_replay"
+        android:layout_width="60dp"
+            android:layout_height="60dp"
+        android:background="@drawable/select_all" />
+
+        <Button  
+            android:id="@+id/button_pause"  
+            android:layout_width="0dp"  
+            android:layout_height="wrap_content"  
+            android:layout_weight="1"  
+            android:text="暂停" />  
+  
+        <Button  
+            android:id="@+id/button_stop"  
+            android:layout_width="0dp"  
+            android:layout_height="wrap_content"  
+            android:layout_weight="1"  
+            android:text="停止" />  
+  
+        <Button  
+            android:id="@+id/button_replay"  
+            android:layout_width="0dp"  
+            android:layout_height="wrap_content"  
+            android:layout_weight="1"  
+            android:text="重播" />  
+    </LinearLayout> -->
+
+<!--         <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ib_videofoward"
+            android:layout_centerHorizontal="true"
+            android:text="视频播放器SurfaceView实例" /> -->
+	
+</RelativeLayout>

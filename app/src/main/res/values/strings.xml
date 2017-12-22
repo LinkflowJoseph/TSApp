@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TSApp</string>
+    <string name="viewreset">RESET</string>
+    <string name="normalpreview">Normal Preview</string>
+    <string name="picture">Gallery</string>
+    <string name="equipment">Equipment</string>
+    <string name="download">Download</string>
+    <string name="photograph">PhotoGraph</string>
+    <string name="set">Set</string>
+    <string name="touch">TOUCH</string>
+    <string name="normal">NORMAL</string>
+    <string name="startPage_version">ver.2018.1.8</string>
+</resources>

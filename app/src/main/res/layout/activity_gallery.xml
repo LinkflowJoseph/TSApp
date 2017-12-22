@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rlfirst"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#2b2e32" >
+
+        <ImageView
+            android:id="@+id/iv_magefirst"
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:clickable="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/btn_arrow_back"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/iv_magefirst"
+            android:text="@string/picture"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/rlfirst"
+        android:background="#2b2e32"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rbtnfirst"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/equipment"
+            android:textColor="#03A9F4"
+            android:textSize="14dp" />
+
+        <RadioButton
+            android:id="@+id/rbtnsecond"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/download"
+            android:textColor="#BEBEBF"
+            android:textSize="14dp" />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/iv_fragment"
+        android:layout_width="200dp"
+        android:layout_height="2dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/rg"
+        android:background="@drawable/menu_circle" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/id_page_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/iv_fragment"
+       android:layout_alignParentBottom="true"
+       >
+    </android.support.v4.view.ViewPager>
+
+
+   
+</RelativeLayout>
